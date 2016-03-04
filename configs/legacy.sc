@@ -21,21 +21,21 @@ ifset set1 set2
 macroblock
 
 # pause macro
-macro NUM_LOCK ctrl
-	PUSH_META CLEAR_META ctrl
+macro NUM_LOCK CTRL
+	PUSH_META CLEAR_META CTRL
 	PRESS PAUSE
 	POP_META 
 endmacro
 
 # printscreen macro
-macro PAD_ASTERIX shift
-	PUSH_META CLEAR_META shift
+macro PAD_ASTERIX SHIFT
+	PUSH_META CLEAR_META SHIFT
 	PRESS PRINTSCREEN
 	POP_META
 endmacro
 
 # break macro
-macro SCROLL_LOCK ctrl
+macro SCROLL_LOCK CTRL
 	PRESS PAUSE
 endmacro
 

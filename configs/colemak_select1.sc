@@ -7,7 +7,7 @@ include colemak.sc
 ifselect any
 macroblock
 
-macro 1 lctrl lshift lalt
+macro 1 LCTRL LSHIFT LALT
 	PRESS SELECT_1
 endmacro
 

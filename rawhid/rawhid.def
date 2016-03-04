@@ -1,5 +1,0 @@
-EXPORTS
-   rawhid_open
-   rawhid_recv
-   rawhid_send
-   rawhid_close
