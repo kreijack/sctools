@@ -1,0 +1,13 @@
+#
+# sctools: udev Rules for Soarer's Converter
+# Copyright (C) 2016 Tim Hentenaar.
+#
+# This code is licenced under the Simplified BSD License.
+# See the LICENSE file for details.
+#
+
+# libusb
+ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="047d", SUBSYSTEM=="usb", MODE="660", GROUP="plugdev"
+
+# hidraw
+KERNEL=="hidraw*", ATTRS{busnum}=="1", ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="047d", MODE="0660", GROUP="plugdev"
