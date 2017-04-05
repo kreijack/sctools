@@ -14,5 +14,4 @@ udev_DATA = udev/99-soarers-converter.rules
 endif
 
 SUBDIRS = $(HIDAPI_SUBDIR) src
-ACLOCAL_AMFLAGS = -I m4
 
