@@ -388,7 +388,8 @@ static void xlate_keys(int count)
 
 	for (i = 0; i < count; i++) {
 		/* A key event */
-		if ((buf[i] == '-' || buf[i] == '+') && i + 3 < count) {
+		if ((buf[i] == 'd' || buf[i] == 'u' || buf[i] == '-' ||
+		     buf[i] == '+') && i + 3 < count) {
 			c = buf[i + 3];
 			buf[i + 3] = 0;
 			key = strtol((const char *)(buf + i + 1),  NULL, 16);
